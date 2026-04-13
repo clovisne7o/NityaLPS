@@ -19,12 +19,14 @@
         }
         .float-logo { animation: float 5s ease-in-out infinite; }
 
+        /* Efeito de degradê no texto principal */
         .text-gradient {
             background: linear-gradient(to right, #ffffff, #ffc42b);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
+        /* Efeito de brilho no botão ao passar o mouse */
         .btn-glow:hover {
             box-shadow: 0 0 30px rgba(255, 196, 43, 0.4);
             transform: scale(1.05);
@@ -33,84 +35,86 @@
 </head>
 <body class="text-gray-100 overflow-x-hidden selection:bg-[#ffc42b] selection:text-black">
 
-    <!-- Header -->
+    <!-- Header / Navbar -->
     <header class="fixed w-full z-50 bg-[#050810]/80 backdrop-blur-xl border-b border-white/5">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex items-center gap-2">
-                <!-- Se o arquivo logo.svg estiver na mesma pasta, ele VAI aparecer aqui -->
+                <!-- Carrega o arquivo logo.svg que está no seu GitHub -->
                 <img src="logo.svg" alt="Nitya Tech" class="h-10 w-auto">
             </div>
-            <a href="https://wa.me/5587991422587" class="bg-[#ffc42b] text-black px-6 py-2 rounded-full font-bold text-sm transition-all btn-glow">
-                ORÇAMENTO
+            <a href="https://wa.me/5587991422587" class="bg-[#ffc42b] text-black px-6 py-2 rounded-full font-bold text-sm transition-all btn-glow uppercase tracking-tighter">
+                Orçamento
             </a>
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero Section (Dobra Principal) -->
     <section class="min-h-screen flex items-center pt-20 px-6 relative">
-        <!-- Luz de fundo -->
+        <!-- Luz de fundo sutil (Ambient Light) -->
         <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#ffc42b]/5 rounded-full blur-[120px] pointer-events-none"></div>
         
         <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center relative z-10">
             
+            <!-- Conteúdo de Texto -->
             <div class="space-y-8">
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#ffc42b]/30 bg-[#ffc42b]/5 text-[#ffc42b] text-xs font-bold uppercase tracking-widest">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#ffc42b]/30 bg-[#ffc42b]/5 text-[#ffc42b] text-[10px] font-black uppercase tracking-widest">
                     <span class="flex h-2 w-2 relative">
                         <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#ffc42b] opacity-75"></span>
                         <span class="relative inline-flex rounded-full h-2 w-2 bg-[#ffc42b]"></span>
                     </span>
-                    Landing Pages de Alta Conversão
+                    Performance Digital de Elite
                 </div>
                 
-                <h1 class="text-6xl md:text-8xl font-black leading-[0.9] tracking-tighter text-white">
+                <h1 class="text-6xl md:text-8xl font-extrabold leading-[0.9] tracking-tighter text-white">
                     Sua página <br><span class="text-gradient">de elite.</span>
                 </h1>
                 
-                <p class="text-gray-400 text-xl max-w-lg leading-relaxed border-l-2 border-[#ffc42b] pl-6">
-                    A Nitya cria ativos digitais que não só impressionam, mas que **convertem cliques em dinheiro**.
+                <p class="text-gray-400 text-xl max-w-lg leading-relaxed border-l-2 border-[#ffc42b] pl-6 italic">
+                    A Nitya cria ativos digitais que não só impressionam, mas que <span class="text-[#ffc42b] font-bold">convertem cliques em dinheiro</span>.
                 </p>
                 
                 <div class="pt-4">
-                    <a href="https://wa.me/5587991422587" class="bg-[#ffc42b] text-black px-12 py-6 rounded-2xl font-black text-xl transition-all btn-glow inline-block">
-                        QUERO VENDER MAIS
+                    <a href="https://wa.me/5587991422587" class="bg-[#ffc42b] text-black px-12 py-6 rounded-2xl font-black text-xl transition-all btn-glow inline-block uppercase tracking-tight">
+                        Quero vender mais
                     </a>
                 </div>
             </div>
 
-            <!-- CONTAINER DA LOGO REAL -->
+            <!-- Visual da Logo Original -->
             <div class="flex justify-center items-center">
                 <div class="float-logo p-8 md:p-12 rounded-[50px] bg-white/[0.01] border border-white/5 backdrop-blur-3xl shadow-2xl">
-                    <!-- Aqui chamamos o seu arquivo .svg diretamente -->
-                    <img src="logo.svg" alt="Nitya Technology" class="w-full max-w-xl">
+                    <!-- Chamando o seu arquivo .svg -->
+                    <img src="logo.svg" alt="Nitya Technology" class="w-full max-w-xl drop-shadow-[0_0_30px_rgba(255,196,43,0.1)]">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Seção Técnica Rápida -->
-    <section class="py-20 px-6 border-t border-white/5">
+    <!-- Seção de Prova Técnica (Números) -->
+    <section class="py-20 px-6 border-t border-white/5 bg-[#03050a]">
         <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div>
+            <div class="space-y-1">
                 <p class="text-3xl font-black text-white leading-none">100%</p>
-                <p class="text-gray-500 text-xs uppercase mt-2 tracking-widest">Responsivo</p>
+                <p class="text-gray-500 text-[10px] uppercase tracking-[0.3em] font-bold">Responsivo</p>
             </div>
-            <div>
+            <div class="space-y-1">
                 <p class="text-3xl font-black text-white leading-none">< 1s</p>
-                <p class="text-gray-500 text-xs uppercase mt-2 tracking-widest">Carregamento</p>
+                <p class="text-gray-500 text-[10px] uppercase tracking-[0.3em] font-bold">Velocidade</p>
             </div>
-            <div>
-                <p class="text-3xl font-black text-white leading-none">SEO</p>
-                <p class="text-gray-500 text-xs uppercase mt-2 tracking-widest">Otimizado</p>
+            <div class="space-y-1">
+                <p class="text-3xl font-black text-white leading-none">High</p>
+                <p class="text-gray-500 text-[10px] uppercase tracking-[0.3em] font-bold">SEO Rank</p>
             </div>
-            <div>
+            <div class="space-y-1">
                 <p class="text-3xl font-black text-white leading-none">UX</p>
-                <p class="text-gray-500 text-xs uppercase mt-2 tracking-widest">Premium</p>
+                <p class="text-gray-500 text-[10px] uppercase tracking-[0.3em] font-bold">Estratégico</p>
             </div>
         </div>
     </section>
 
+    <!-- Footer Simples -->
     <footer class="py-10 text-center opacity-30">
-        <p class="text-[10px] font-bold uppercase tracking-[0.5em]">Nitya Tech &copy; 2024</p>
+        <p class="text-[9px] font-bold uppercase tracking-[0.6em]">Nitya Tech &copy; 2024 | João Pessoa - PB</p>
     </footer>
 
 </body>
